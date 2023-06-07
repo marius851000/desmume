@@ -183,7 +183,7 @@ elif dep_gl.found()
   ]
 endif
 
-if dep_openal.found()
+if dep_openal.found() and get_option('openal')
   dependencies += dep_openal
   libdesmume_src += [
     '../posix/shared/mic_openal.cpp',
