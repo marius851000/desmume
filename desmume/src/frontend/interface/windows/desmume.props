@@ -45,7 +45,7 @@
 		<OutDir>$(SolutionDir)__bins\</OutDir>
 		<TargetName>$(ProjectName)-$(NDS_VisualStudioName)-$(Configuration)</TargetName>
 		<TargetName Condition="'$(Platform)' == 'x64'">$(ProjectName)-$(NDS_VisualStudioName)-x64-$(Configuration)</TargetName>
-		<TargetPath>$(OutDir)$(TargetName).dll</TargetPath>
+		<TargetPath>$(OutDir)$(TargetName)$(TargetExt)</TargetPath>
 	</PropertyGroup>
 
 	<!-- some default configurations per build configuration -->
